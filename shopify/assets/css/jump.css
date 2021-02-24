@@ -1,0 +1,36 @@
+body{
+  margin: 0;
+}
+main{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.load2 {
+  width: 60px;
+  height: 60px;
+  -webkit-animation: rotateplane 1.2s infinite ease-in-out;
+  animation: rotateplane 1.2s infinite ease-in-out;
+  background-image: url("data:image/svg+xml, %3Csvg id='图层_1' data-name='图层 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 514.29 514.29'%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill:%23141c2e;%7D.cls-2%7Bfill:%2300b0ff;%7D.cls-3%7Bfill:%23fd5265;%7D.cls-4%7Bfill:%237f5bbb;%7D.cls-5%7Bfill:%234ecbfa;%7D%3C/style%3E%3C/defs%3E%3Ctitle%3EYMQ%3C/title%3E%3Crect class='cls-1' width='514.29' height='514.29'/%3E%3Cpath class='cls-2' d='M256,180.56,182.9,253a4.21,4.21,0,0,0-1.07-1.46c-7.55-7.44-15.15-14.85-22.33-22.64a32.68,32.68,0,0,1-8.62-22.71q-.1-62.58,0-125.15c0-.76.07-1.51.13-2.85a30.75,30.75,0,0,1,2.5,1.94q29.66,29.22,59.27,58.46,20.66,20.37,41.31,40.74A3.5,3.5,0,0,0,256,180.56Z' transform='translate%281.15 2.29%29'/%3E%3Cpath class='cls-3' d='M254.79,327.06q-42.93,43.2-85.62,86.63-7.83,7.94-15.65,15.86c-.57.57-1.23,1-2.33,1.95-.12-1.43-.25-2.29-.25-3.16,0-42.56-.09-85.13.05-127.69,0-10.09,4.15-18.66,11.35-25.76,6.49-6.41,12.89-12.91,19.41-19.29,1-1,1.47-1.73,1.15-2.59Z' transform='translate%281.15 2.29%29'/%3E%3Cpath class='cls-4' d='M361.16,205.06A36.34,36.34,0,0,1,350,231.87q-46,46-92,92L256,325.84V180.56c.64.06,1.29-.28,2.14-1.12q27.74-27.47,55.59-54.82Q336,102.67,358.24,80.71c.71-.7,1.48-1.34,2.22-2l.67.25v3.23C361.13,123.14,361.07,164.1,361.16,205.06Z' transform='translate%281.15 2.29%29'/%3E%3Cpath class='cls-5' d='M256,180.56V325.84l-1.21,1.22L182.9,253Z' transform='translate%281.15 2.29%29'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+@-webkit-keyframes rotateplane {
+  0% { -webkit-transform: perspective(120px) }
+  50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+  100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+}
+@keyframes rotateplane {
+  0% {
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg)
+  } 50% {
+      transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+      -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg)
+    } 100% {
+        transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+        -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+      }
+}
